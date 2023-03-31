@@ -1,0 +1,48 @@
+.superAdmin{
+    padding: 1rem;
+}
+.superAdmin h1{
+    text-align: center;
+    color: var(--primary-dark-green);
+    
+}
+.approveHospitalTable{
+    max-width: 900px;
+    
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.superAdmin table{
+    width: 100%;
+    max-width: 700px;
+    padding: 1rem;
+    border: 1px solid var(--gray);
+    border-collapse: collapse;
+    border-radius: var(--border-radius);
+    text-align: center;
+}
+.superAdmin table tr{
+    border: 1px solid var(--gray);
+    /* background-color: var(--primary-dark-green); */
+}
+.superAdmin td,.superAdmin th{
+    padding: 1rem;
+}
+.superAdmin table tr th:last-child,
+.superAdmin table tr td:last-child{
+    text-align: center;
+}
+
+.superAdmin button{
+    background-color: var(--gold);
+    color: var(--primary-dark-green);
+    padding: 0.5rem 0.8rem;
+    margin: 0.5rem;
+    border-radius: var(--border-radius);
+    border: none;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+}

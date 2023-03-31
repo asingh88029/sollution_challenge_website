@@ -1,0 +1,274 @@
+.hospital_left_img{
+    height: 550px;
+    width: 700px;
+    background-color: #064635;
+    border: 1px solid #064635;
+    padding: 5px;
+    color: var(--lime-green);
+    /* padding: 10px 10px; */
+    /* margin: 10px 10px; */
+}
+
+.hospital_details_and_review_container{
+    display: flex;
+    background-color: #064635;
+}
+.hospital_desc{
+    height: 70vh;
+    width: 100%;
+    background-color: var(--primary-dark-green);
+    color: var(--white);
+    padding: 1rem 0;
+}
+.hospital_desc>*{
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.hospital_name_and_address_container{
+    text-align: start;
+}
+.hospital_name{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.hospital_address{
+    font-size:14px;
+    /* margin-top: 1rem; */
+}
+.hospital_assets_and_hospital_contact_container{
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    align-items: flex-start;
+}
+.hospital_assets{
+    /* overflow: scroll; */
+    width: 100%;
+    margin-top: 1rem;
+    display: flex;
+    padding: 0;
+    line-height: 1;
+}
+.hospital_assets>*{
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    align-items: center;
+}
+.hospital_assets_title{
+    width: max-content;
+}
+.hospital_assets svg{
+    height: 12px;
+    fill: var(--white);
+}
+
+.hospital_contact{
+    /* overflow: scroll; */
+    width: 100%;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+    line-height: 1.5;
+}
+.hospital_contact>*{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    align-items: center;
+}
+.hospital_contact svg{
+    height: 24px;
+    fill: var(--white);
+}
+.hospital_book_appointment{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hospital_desc button{
+    background-color: var(--gold);
+    color: var(--primary-dark-green);
+    padding: 0.5rem 0.8rem;
+    margin: 0.5rem;
+    border-radius: var(--border-radius);
+    border: none;
+    font-weight: bold;
+    width: 300px;
+    font-size: 1rem; 
+    cursor: pointer;  
+}
+
+.hospital_review{
+    padding: 0 1rem;
+    /* overflow-y: scroll; */
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.hospital_review_card_container{
+    padding: 1rem;
+}
+.hospital_review_card{
+    display: flex;
+    gap: 1rem;
+}
+.hospital_reviewer h5{
+    margin: 0;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+}
+.hospital_review_card .hospital_reviewer_img img {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+.review_stars{
+    font-size: 1.3rem;
+    fill: var(--primary-dark-green);
+}
+.hospital_review textarea{
+    /* border: none; */
+    width: 100%;
+    height: 100px;
+    border-radius: var(--border-radius);
+    border: 2px solid var(--primary-dark-green);
+    font-size: 1rem;
+    resize: vertical;
+}
+.hospital_review button{
+    border: none;
+    background-color: transparent;
+    border: 2px solid var(--primary-dark-green);
+    color: var(--primary-dark-green);
+    font-weight: bold;
+    padding: .5rem 1rem;
+    border-radius: var(--border-radius);
+    width: 100%;
+    transition: all ease 0.5s;
+}
+.hospital_review button:hover{
+    cursor: pointer;
+    background-color: #96B880;
+}
+.hospital_timing{
+    font-size: .8rem;
+}
+.hospital_timing_btn{
+    background-color: var(--gold);
+    color: var(--primary-dark-green);
+    padding: 0.5rem;
+    margin:0 1rem 0 0rem;
+    border-radius: var(--border-radius);
+    width: 100px;
+}
+.select_doctor_wrapper{
+    min-width: 180px;
+    max-width: 90vw;
+    max-height: 90vh;
+    width: max-content;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    background-color: var(--white);
+    padding-bottom: 1rem;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: var(--border-radius);
+    box-shadow: 0 0 10px #33333333;
+    z-index: 99999999;
+    box-sizing: border-box;
+}
+.select_doctor_inner_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    overflow: scroll;
+    height: 400px;
+    justify-content: center;
+}
+.select_doctor_wrapper h1{
+    color: var(--primary-dark-green);
+    cursor: default;
+}
+.select_doctor{
+    padding: 10px;
+    cursor: pointer;
+    border-radius: var(--border-radius);
+}
+.select_doctor:hover{
+    background-color: var(--primary-dark-green);
+    color: var(--white);
+    transition: all .25s ease-in-out;
+}
+.select_doctor_desc{
+    text-align: center;
+}
+.cancle_appointment_btn{
+    background-color: var(--gold);
+    border: none;
+    padding: .5rem 1rem;
+    font-weight: bold;
+    color: var(--primary-dark-green);
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    cursor: pointer;
+}
+.select_time_slot{
+    border: 2px solid var(--primary-dark-green);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all .25s ease-in-out;
+}
+.select_time_slot:hover{
+    background-color: var(--primary-dark-green);
+    color: var(--white);
+}
+.time_slot_btn_wrapper{
+    display: flex;
+}
+.select_slot_inner_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.select_time_slot_disabled{
+    background-color: var(--dark-gray);
+    border:2px solid var(--dark-gray)
+}
+.select_time_slot_disabled:hover{
+    cursor: not-allowed;
+}
+@media screen and (min-width:500px) and (max-width:786px) {
+    .hospital_assets,.hospital_contact{
+        width: 100%;
+        justify-content: space-evenly;
+    }
+}
+@media screen and (max-width: 500px) {
+    .hospital_assets,.hospital_contact{
+        width: 100%;
+    }
+}
+@media screen and (min-width:786px) {
+    /* .hospital_desc{
+        max-width: 50vw;
+    }    */
+    .hospital_assets{
+        justify-content: space-evenly;
+    }
+    
+}

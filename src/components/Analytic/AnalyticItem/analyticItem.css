@@ -1,0 +1,17 @@
+.analyticItem {
+  background-color: #FFFFFF;
+  max-width: 500px;
+  max-height: 200px;
+  padding: 24px 22px;
+  border-radius: 0.5rem;
+  border: 1px solid rgb(32, 82, 23);
+}
+.analyticItem .itemValue, .analyticItem .itemData {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem 0;
+}
+.analyticItem .itemValue p {
+  font-weight: 1000;
+  font-size: 1rem;
+}

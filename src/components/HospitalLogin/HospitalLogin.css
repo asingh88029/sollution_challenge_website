@@ -1,0 +1,100 @@
+.login_form_container{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5rem 0;
+}
+.login_form{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--primary-dark-green);
+    padding: 2rem 1rem;
+    border-radius: var(--border-radius);
+    color: var(--white);
+}
+.hospitalLogin_heading{
+    margin: 0;
+}
+.login_form input{
+    margin-top: .25rem;
+    width: 250px;
+    padding: .5rem .5rem;
+    outline: none;
+    border: none;
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    border: 2px solid transparent;
+}
+.login_form button{
+    background-color: var(--gold);
+    color: var(--primary-dark-green);
+    padding: 0.5rem 0.8rem;
+    margin: 0.5rem;
+    border-radius: var(--border-radius);
+    border: none;
+    font-weight: bold;
+    width: 100%;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.hospital_login_invalid_user{
+    border:2px solid red !important;
+    animation: wrong-log 0.3s;
+    position: relative;
+}
+@keyframes wrong-log {
+    0% { left: 0px;}
+    20% {left: 15px;}
+    40% {left: -15px;}
+    60% {left: 15px;}
+    80% {left: -15px;}
+    100% {left: 0px;}
+}
+.login_form_forgot_password{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 14px;
+}
+.login_form_invalid_user{
+    justify-content: space-between;
+}
+.hospital_login_invalid_user_info{
+    color: red;
+}
+.hospital_form_forgot_password_link{
+    color: var(--dark-gray);
+}
+.hospital_form_login_general_user_link{
+    font-size: 14px;
+    
+}
+.hospital_login_select_user_roles{
+    margin-top: 0.25rem;
+    width: 250px;
+    padding: 0.5rem 0.5rem;
+    outline: none;
+    border: none;
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    border: 2px solid transparent;
+    text-transform: capitalize;
+}
+.loading_spinner{
+    font-size: 1.5rem;
+    display: none;
+    animation: example 1s ease-in-out .2s infinite;
+}
+@keyframes example {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+  }

@@ -1,0 +1,25 @@
+.add_doctor_doctor_department_list{
+    text-transform: capitalize;
+    height: 35px;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--gray);
+    padding: 0.5rem 0.5rem;
+    font-size: 1rem;
+    outline-color: var(--primary-dark-green);
+}
+@media screen and (min-width: 426px) {
+    .hospital_basic_details_wrapper {
+        position: relative;
+        /* left: 50%;
+        transform: translateX(-50%); */
+        padding: 2rem;
+        /* margin-top: 2rem; */
+        width: 100%;
+        max-width: 1000px;
+    }
+
+    .hospital_details {
+        width: 100%;
+        max-width: 1000px;
+    }
+}

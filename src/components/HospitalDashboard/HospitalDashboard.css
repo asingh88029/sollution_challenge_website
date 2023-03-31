@@ -1,0 +1,227 @@
+.hospital_dashboard {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.hospital_details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    margin-top: 1rem;
+    padding: 2rem 0;
+    border-radius: var(--border-radius);
+    box-shadow: 0px 0px 5px #a0a0a0;
+}
+
+.hospital_dashboard .uploadImg {
+    position: relative;
+    display: flex;
+    width: max-content;
+    cursor: pointer;
+}
+
+.hospital_dashboard .uploadImg_div {
+    width: 200px;
+    height: 200px;
+    background-color: var(--white);
+    border: 5px dashed var(--primary-dark-green);
+    border-radius: var(--border-radius);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-dark-green);
+}
+
+.hospital_dashboard .uploadImg_div_circle {
+    font-size: 2rem;
+}
+
+.hospital_dashboard .uploadImg_input {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+}
+
+.hospital_dashboard .hospital_images {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.hospital_dashboard .hospital_images img {
+    height: 200px;
+    width: 200px;
+    object-fit: contain;
+    border: 1px solid var(--gray);
+    border-radius: var(--border-radius);
+}
+
+.uploadImgs_preview_container {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.hospital_basic_details_wrapper {
+    /* margin-top: 1rem;
+    padding: 2rem 0; */
+    width: fit-content;
+    /* border-radius: var(--border-radius); */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* box-shadow: 0px 0px 5px #a0a0a0; */
+}
+
+.hospital_basic_details_inner_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.hospital_basic_details {
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    padding: 1rem;
+    box-sizing: border-box;
+    border-radius: var(--border-radius);
+    gap: 1rem;
+
+}
+
+.hospital_basic_details>label {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.hospital_basic_details>label>input {
+    height: 35px;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--gray);
+    padding: .5rem .5rem;
+    font-size: 1rem;
+    outline-color: var(--primary-dark-green);
+}
+
+/* Removing up and down arrow from input type= number */
+/* Chrome, Safari, Edge, Opera */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.hospital_dashboard_get_coordinates_btn {
+    color: var(--primary-dark-green);
+    background-color: transparent;
+    height: 35px;
+    border-radius: var(--border-radius);
+    border: 2px solid var(--primary-dark-green);
+    transition: all .25s ease-in-out;
+    cursor: pointer;
+}
+
+.hospital_dashboard_get_coordinates_btn:hover {
+    color: var(--white);
+    background-color: var(--primary-dark-green);
+    height: 35px;
+    border-radius: var(--border-radius);
+    border: 2px solid var(--primary-dark-green);
+}
+
+.update_hospital_details_btn {
+    color: var(--primary-dark-green);
+    background-color: gold;
+    width: 260px;
+    height: 35px;
+    border-radius: var(--border-radius);
+    border: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: all .25s ease-in-out;
+    cursor: pointer;
+}
+
+.update_hospital_details_btn:hover {
+    box-shadow: inset 0 0 10px #dcc230, 0 0 10px #d0d0d0;
+}
+
+.hospital_basic_details_hospital_type {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.hospital_dashboard_get_coordinates_btn[isDisabled] {
+    color: var(--dark-gray);
+    position: relative;
+    border:2px solid #d0d0d0;
+    cursor: not-allowed;
+}
+.hospital_dashboard_get_coordinates_btn[isDisabled]:hover{
+    background-color: #d0d0d0;
+    color: var(--white);
+}
+.hospital_dashboard_get_coordinates_btn[isDisabled]:hover::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #333;
+    position: absolute;
+    display: flex;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.hospital_dashboard_get_coordinates_btn[isDisabled]:hover:after {
+    content: "Not Supported by your System, Try writting Coordinates manually";
+    color: var(--white);
+    display: flex;
+    position: absolute;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    width: max-content;
+    max-width: 100%;
+    line-height: 1.5rem;
+}
+
+@media screen and (min-width: 426px) {
+    .hospital_basic_details_wrapper {
+        position: relative;
+        /* left: 50%;
+        transform: translateX(-50%); */
+        padding: 2rem;
+        /* margin-top: 2rem; */
+        width: 100%;
+        max-width: 1000px;
+    }
+
+    .hospital_details {
+        width: 100%;
+        max-width: 1000px;
+    }
+}

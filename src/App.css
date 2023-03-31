@@ -1,0 +1,12 @@
+/* #root>*:nth-child(2) {
+    margin-top: 70px;
+} */
+.margin_top{
+    width: 100vw;
+    height: 100px;
+}
+@media screen and (max-width:425px) {
+    .margin_top{
+        height: 140px;
+    }
+}

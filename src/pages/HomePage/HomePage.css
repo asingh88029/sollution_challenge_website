@@ -1,0 +1,20 @@
+.nearby_Hospital_heading{
+    margin-left: 2rem;
+    color: var(--primary-dark-green);
+}
+.filter_hospital_card{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem;
+    align-items: center;
+    gap: 1rem;
+    color: var(--primary-dark-green);
+}
+.filter_hospital_card select{
+    border: 2px solid var(--primary-dark-green);
+    height: 35px;
+    min-width: 280px;
+    padding: 0rem 1rem;
+    border-radius: var(--border-radius);
+    outline: none;
+}

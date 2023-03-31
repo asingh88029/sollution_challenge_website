@@ -1,0 +1,216 @@
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 70px;
+    padding: 0 1rem;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    box-shadow: 0 5px 5px #66666666;
+    z-index: 999999;
+    background: var(--white);
+}
+.navbar .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-family: 'Inria Serif';
+    font-size: 32px;
+    color: var(--primary-dark-green);
+}
+.fabars{
+    display: none;
+}
+.mobileMenu{
+    display: none;
+}
+.navbar .search{
+    width: 300px;
+    box-sizing: border-box;
+    background-color: var(--lime-green-50);
+    display: flex;
+    align-items: center;
+    padding: 5px 5px;
+    border-radius: var(--border-radius);
+}
+.navbar .search input{
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid var(--lime-green);
+    padding: 5px;
+    outline: none;
+}
+.navbar .search button{
+    background: none;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333333;
+    padding: 5px;
+}
+.navbar .user{
+    background: none;
+    text-transform: capitalize;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    padding: 5px;
+    color: #333333;
+    -webkit-tap-highlight-color: transparent;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    user-select: none;
+}
+.userPic{
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar .location button{
+    background: none;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333333;
+}
+.navbar .location{
+    font-size: 14px;
+    font-weight: bold;
+}
+.navbar .location div{
+    display: flex;
+    align-items: center;
+    color: var(--primary-dark-green);
+}
+.menu_container{
+    position: relative;
+}
+.navbar .menu{
+    background-color: var(--white);
+    padding: 0;
+    margin: 0;
+    width: max-content;
+    flex-direction: column;
+    position: absolute;
+    box-shadow: 0 0 15px #d0d0d0;
+    border-radius: var(--border-radius);
+    z-index: 9999;
+}
+.menu_close{
+    display: none;
+}
+.navbar .menu>*{
+    padding: 1rem;
+    text-decoration: none;
+    color: var(--black);
+    display: flex;
+    align-items: center;
+    gap: 1rem;    
+    font-size: 1rem;
+}
+.menu>*:hover{
+    color: var(--white);
+    background-color: var(--primary-dark-green);
+}
+.mobileMenu:checked~.menu_container{
+    left:0;
+    z-index: 9999;
+}
+.logout_btn{
+    border: none;
+    background: transparent;
+    color: inherit;
+    cursor: pointer;
+}
+.add_doctor_server_success_message{
+    color: var(--primary-dark-green);
+    display: flex;
+    gap: 1rem;
+}
+.add_doctor_server_error_message{
+    color: red;
+    display: flex;
+    gap: 1rem;
+}
+@media all and (max-width : 425px){
+   .navbar{
+       height: auto;
+       padding: 1rem;
+       justify-content: space-between;
+   }
+   .navbar .menu_container{
+       position: fixed;
+       height: 100vh;
+       width: 300px;
+       top: 0;
+       left: -100%;
+       background-color: #fff;
+       box-shadow: 0 0 5px #d0d0d0;
+       transition: all .25s ease-in-out;
+   }
+   .navbar .user{
+       flex-direction: column;
+       align-items: flex-start;
+       width: 100%;
+       padding: 2rem;
+       font-weight: bold;
+       color: #fff;
+       background: linear-gradient(180deg, #91C788 0%, #29745E 100%);
+   }
+   .userPic{
+       width: 100px;
+       height: 100px;
+       font-size: 70px;
+       color: #d0d0d0;
+       justify-content: flex-start;
+   }
+   .hide_on_mobile{
+       display: none;
+   }
+   .navbar .menu{
+       width: 100%;
+       box-shadow: unset;
+   }
+   .navbar .logo{
+       /* order:2; */
+   }
+   .navbar .search{
+       order: 2;
+       margin: auto;
+       margin-top: 1rem;
+   }
+   .fabars{
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       font-size: 1.5rem;
+   }
+   .menu_close{
+       display: flex;
+       position: absolute;
+       left: 20px;
+       top: 20px;
+   }
+}

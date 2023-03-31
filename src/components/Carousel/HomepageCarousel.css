@@ -1,0 +1,22 @@
+.homepage_carousel_item_container{
+    display: flex;
+    min-height: 300px;
+    align-items: center;
+    padding: 2rem;
+    background: linear-gradient(90deg, #005F53 0%, #AFC788 30.28%, #AFC788 53.21%, #5F9770 92.35%);
+    color: var(--white);
+    margin: 1rem;
+    border-radius: var(--border-radius);
+}
+.homepage_carousel_item_container>*{
+    width: 50%;
+}
+@media only screen and (max-width : 425px){
+    .homepage_carousel_item_container{
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    .homepage_carousel_item_container>*{
+        width: 100%;
+    }
+}
